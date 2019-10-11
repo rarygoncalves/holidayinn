@@ -11,6 +11,10 @@ class Promocoes(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+            verbose_name = 'Promoção'
+            verbose_name_plural = 'Promoções'
+
 class Acomodacoes(models.Model):
     title = models.CharField(max_length=30)
     description = models.TextField(max_length=200)
@@ -18,3 +22,7 @@ class Acomodacoes(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+            verbose_name = 'Acomodação'
+            verbose_name_plural = 'Acomodações'
