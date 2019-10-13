@@ -1,10 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <title>Holiday Inn</title>
   </head>
+
   <body>
-    
+    <form method="post" action="{% url 'index' %}">
+      {% csrf_token %}
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" />
+      </div>
+      <div>
+        <label for="cel">Celular:</label>
+        <input type="text" name="cel" />
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" />
+      </div>
+      <div>
+        <label for="subject">Assunto:</label>
+        <input type="text" name="subject" />
+      </div>
+      <div>
+        <label for="message">Mensagem:</label>
+        <textarea name="message"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
   </body>
 </html>
