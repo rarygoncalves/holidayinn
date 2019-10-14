@@ -1,10 +1,231 @@
+{% load static from staticfiles%}
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Holiday Inn</title>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holiday inn</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/fontawesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick-theme.css' %}" />
+
+
+</head>
+
+<body>
+
+    <!-- Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{%static 'images/desk1.jpg' %}">
+                <div class="carousel-caption">
+                    <h1>Seja bem vindo!</h1>
+                    <h5>Planeje sua proxima aventura com um travesseiro firme e macio</h5>
+                    <button class="btn" name="button">Ver acomodações</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'images/desk2.jpg' %}">
+                <div class="carousel-caption">
+                    <h1>Lorem ipsum dolor!</h1>
+                    <h5>Praesent blandit justo id mauris tempus pellentesque. Maecenas non semper augue,
+                        nec sagittis risus.</h5>
+                    <button class="btn" name="button">Ver acomodações</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'images/desk3.jpg' %}">
+                <div class="carousel-caption">
+                    <h1>Dolor ipsum lorem!</h1>
+                    <h5>Planeje sua proxima aventura com um travesseiro firme e macio</h5>
+                    <button class="btn" name="button">Ver acomodações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Promoções-->
+    <section id="promocoes" class="secao-conteudo">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-xs-12 col-md-12 col-lg-12 pt-4 p-0">
+                    <h1 class="secao-titulo"><strong>Promoções</strong></h1>
+                    <hr class="divisoria-titulo mb-0" />
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-xs-12 col-md-12 col-lg-12 p-0">
+                    <div class="carousel-promocao responsive autoplay">
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1445991842772-097fea258e7b.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1495754149474-e54c07932677.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1503003378590-66f89f543bc6.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1445991842772-097fea258e7b.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1495754149474-e54c07932677.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1503003378590-66f89f543bc6.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1445991842772-097fea258e7b.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1495754149474-e54c07932677.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card promocao-card shadow mb-5">
+                            <img src="{%static 'images/photo-1503003378590-66f89f543bc6.jpeg' %}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <p class="card-text text-promocao">
+                                    Some quick example text to build on the card title
+                                    and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="acomodacoes" class="secao-conteudo">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-xs-12 col-md-12 col-lg-12 pt-4 p-0">
+                    <h1 class="secao-titulo"><strong>Acomodações</strong></h1>
+                    <hr class="divisoria-titulo mb-0" />
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-xs-4 col-md-4 col-lg-4 p-0">
+                    <div class="card acomodacoes-card shadow mb-5">
+                        <img src="{%static 'images/photo-1445991842772-097fea258e7b.jpeg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Card title</h5>
+                            <p class="card-text text-promocao">
+                               Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-4 col-md-4 col-lg-4 p-0">
+                    <div class="descricao-promocoes">
+
+                    </div>
+                    <div class="card acomodacoes-card shadow mb-5">
+                        <img src="{%static 'images/photo-1495754149474-e54c07932677.jpeg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Card title</h5>
+                            <p class="card-text text-promocao">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 col-lg-4 p-0">
+                    <div class="card acomodacoes-card shadow mb-5">
+                        <img src="{%static 'images/photo-1503003378590-66f89f543bc6.jpeg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Card title</h5>
+                            <p class="card-text text-promocao">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="{%static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{%static 'js/jquery-migrate-3.1.0.min.js' %}"></script>
+    <script src="{%static 'js/slick.js' %}"></script>
+    <script src="{%static 'js/slick.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/main.js' %}"></script>
+</body>
+
 </html>
