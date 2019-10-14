@@ -17,13 +17,13 @@ html, body {
 
 /*---------------------------------------------------------------------------------------*/
 .divisoria-titulo{
-    width: 20%;
-    border-top: 0.6rem solid #43A23B; 
+    width: 16rem;
+    border-top: 0.5rem solid #43A23B; 
     padding-bottom: 4% !important;
 }
 .secao-titulo{
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.7rem;
 }
 .btn {
 	color: #ffffff !important;
@@ -31,12 +31,13 @@ html, body {
 	width: 25%;
 	box-shadow: 0px 2px 5px #00000060; 
 }
-.secao-conteudo{
-    padding-top: 2%;
-    padding-left: 24% !important;
-    padding-right: 24%!important;
-    padding-bottom: 3%;
-    width:100%;
+
+.card-img-top{
+    min-height: 200px!important;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -69,15 +70,22 @@ html, body {
 
 /*---------------------------------------------------------------------------------------*/
 .promocao-card{
-    color:#092601;
-    margin:0.4%;
-    text-align: justify;
-    height:30rem !important;
-    border:0px !important;
+
+   color:#092601;
+   margin:0.3%!important;
+   margin-bottom: 8%!important;
+   text-align: justify;
+   height:28rem !important;
+   border:0px !important;
+
 }
 
 #promocoes{
-
+    padding-top: 3%;
+    padding-left: 19% ;
+    padding-right: 19%;
+    padding-bottom: 4%;
+    width:100%;
     background-color:#A7D384;
     color:#FFFFFF;
 }
@@ -92,17 +100,51 @@ html, body {
     background-color:#FAFAFA;
 
 }
+.card-body-acomodacao{
+    min-width: 330px;
+}
 
 .acomodacoes-card{
     color:#FFFFFF;
     background-color: #43A23B!important;
-    margin:8%;
+    margin:3%;
     text-align: justify;
     border:0px !important;
-    height:30rem !important;
+    height:28rem !important;
+
+    min-width: 276px;
 }
 .acomodacoes-card:hover{
     background-color: #52A34C !important;
+}
+
+@media (max-width: 1200px) {
+	.carousel-caption {
+		top: 55%;
+	}
+	.carousel-caption h1{
+		font-size: 2.5rem;
+	}
+	.carousel-caption h5 {
+		font-size: 1.5rem;
+		padding-bottom: 2rem;
+	}
+	.carousel-caption .btn{
+		font-size: 1rem;
+		width: 70%;
+	}
+
+    .promocao-card{
+        
+        margin:0.3%!important;
+    }
+    #promocoes{
+        padding-top: 5%;
+        padding-left: 10%!important;
+        padding-right: 10%!important;
+        padding-bottom: 5%;
+
+    }
 }
 
 @media (max-width: 991px) {
@@ -120,21 +162,19 @@ html, body {
 		font-size: 1rem;
 		width: 70%;
 	}
-	.promocao-card{
-    
-        color:#092601;
-        margin:1%;
-        text-align: justify;
-    
+
+    .promocao-card{
+        
+        margin:0.2%!important;
+
     }
-    .promocoes{
-        width:100%;
-        background-color:#A7D384;
-        color:#FFFFFF;
-        padding-top: 3%;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-bottom: 3%;
+    #promocoes{
+
+        padding-top: 5%;
+        padding-left: 30% ;
+        padding-right: 30%;
+        padding-bottom: 5%;
+
     }
 }
 
@@ -159,21 +199,28 @@ html, body {
         color:#092601;
         margin:1%;
         text-align: justify;
-        height:20rem !important;
-        height:29rem !important;
+
     
     }
     .titulo-card-promocao{
         text-align: center;
     }
-    .promocoes{
-        width:100%;
-        background-color:#A7D384;
-        color:#FFFFFF;
-        padding-top: 3%;
-        padding-left: 16%;
-        padding-right: 16%;
-        padding-bottom: 3%;
+    .promocao-card{
+        
+        margin:1%!important;
+    }
+    .secao-conteudo p{
+        font-size: 0.9rem;
+    }
+    .secao-conteudo h5{
+		font-size: 1.2rem;
+
+	}
+    #promocoes{
+        padding-top: 4%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-bottom: 4%;
     }
 }
 
@@ -195,20 +242,19 @@ html, body {
 		font-size: 0.5rem;
 		width: 50%;
     }
-    .divisoria-titulo{
-        width: 80%;
-        border-top: 0.5rem solid #43A23B;
-    }
     .promocao-card{
         
-        color:#092601;
-        text-align: justify;
-        margin:0.5%;
+        margin:0.3%!important;
     }
-    .promocoes{
-        width:100%;
-        background-color:#A7D384;
-        color:#FFFFFF;
+    .secao-conteudo p{
+        font-size: 0.8rem;
+    }
+    .secao-conteudo h5{
+		font-size: 1rem;
+
+	}
+    #promocoes{
+
         padding-top: 0%;
         padding-left: 10% !important;
         padding-right: 10%!important;
