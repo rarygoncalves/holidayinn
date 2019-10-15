@@ -39,6 +39,10 @@ html, body {
     display: block;
 
 }
+.card-body{
+    background-color: #FAFAFA!important;
+}
+
 
 /*---------------------------------------------------------------------------------------*/
 
@@ -72,11 +76,12 @@ html, body {
 .promocao-card{
 
    color:#092601;
-   margin:0.3%!important;
-   margin-bottom: 8%!important;
+   margin:0.3%;
+   margin-bottom: 8%;
    text-align: justify;
    height:28rem !important;
    border:0px !important;
+   background-color: #FAFAFA!important;
 
 }
 
@@ -98,25 +103,70 @@ html, body {
 #acomodacoes{
 
     background-color:#FAFAFA;
-
+    padding-top: 3%;
+    padding-left: 19% ;
+    padding-right: 19%;
+    padding-bottom: 4%;
 }
+.card-acomodacao{
+    max-width: 330px!important;
+    min-width: 275px;
+    margin:2%;
+    padding:0%!important;
+}
+
+
 .card-body-acomodacao{
-    min-width: 330px;
-}
-
-.acomodacoes-card{
     color:#FFFFFF;
-    background-color: #43A23B!important;
-    margin:3%;
+    /* background-color: #43A23B!important; */
     text-align: justify;
     border:0px !important;
-    height:28rem !important;
+    height:10rem !important;
+    
+    
+}
+.card-img-top.img-acomodacoes{
+    min-height: 330px!important;
+    object-fit: cover;
+}
 
-    min-width: 276px;
+.card-body.card-body-acomodacao{
+    background-color: #43A23B!important;
 }
-.acomodacoes-card:hover{
-    background-color: #52A34C !important;
+.card-body.card-icon-acomodacao{
+    background-color: #43A23B!important;
+
 }
+
+.icon-acomodacoes{
+    font-size: 2rem;
+    color:#FFFFFF;
+}
+
+/*DESCRIÇÃO ACOMODAÇÕES*/
+.container-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: justify;
+    padding:10%;
+    padding-bottom: 15;
+    padding-top: 15%;
+    opacity: 0;
+}
+.card-acomodacao:hover .container-overlay{
+    opacity: 1.0;
+    color:#FFFFFF;
+    background-color: #43A23B;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.card-acomodacao:hover .icon-acomodacoes{
+    opacity: 0;
+}
+
+
+/*--------------------------------------------------------*/  
 
 @media (max-width: 1200px) {
 	.carousel-caption {
