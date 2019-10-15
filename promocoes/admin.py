@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Quartos
+from .models import Promocoes
 
 # Register your models here.
 
-admin.site.register(Quartos)
+admin.site.register(Promocoes)

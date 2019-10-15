@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'acomodacoes',
     'core',
     'institucional',
+    'promocoes',
 ]
 
 MIDDLEWARE = [

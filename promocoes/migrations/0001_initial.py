@@ -12,15 +12,15 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Quemsomos',
+            name='Promocoes',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=20)),
-                ('description', models.TextField(max_length=300)),
+                ('title', models.CharField(max_length=30)),
+                ('description', models.TextField(max_length=200)),
             ],
             options={
-                'verbose_name': 'Quem Somos',
-                'verbose_name_plural': 'Quem Somos',
+                'verbose_name': 'Promoção',
+                'verbose_name_plural': 'Promoções',
             },
         ),
     ]
