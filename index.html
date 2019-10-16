@@ -73,7 +73,7 @@
 				</div>
 				<div class="details">
 					<h2>Nossa missão</h2>
-				</div>	
+				</div>
 				<div class="content">
 					<p>Aliquam eu urna nibh. In finibus metus id est tristique consequat. Vestibulum suscipit fringilla eros eu pretium. Aenean aliquam, tortor a cursus semper, lacus urna vestibulum elit. Proin egestas faucibus congue.</p>
 
@@ -87,7 +87,7 @@
 				</div>
 				<div class="details">
 					<h2>Nossa visão</h2>
-				</div>	
+				</div>
 				<div class="content">
 					<p>Proin porta, est eget posuere placerat, sem risus aliquam arcu, vitae accumsan enim tellus at arcu. Cras auctor justo nibh, eget vulputate magna cursus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam quis venenatis nisi, in molestie metus orci ut risus.</p>
 				</div>
@@ -99,7 +99,7 @@
 				</div>
 				<div class="details">
 					<h2>Valores</h2>
-				</div>	
+				</div>
 				<div class="content">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget vulputate tellus. Sed semper commodo dui ac hendrerit. Mauris fringilla mattis lectus.
 					</div>
@@ -355,6 +355,63 @@
 
 
 		</section>
+
+
+    <!--************************************************************************-->
+
+		<!--Contato-->
+
+    <!--************************************************************************-->
+
+    <!--Contato-->
+
+    <section id="contato" class="secao-conteudo">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-0">
+            <h1 class="secao-titulo"><strong>Contato</strong></h1>
+            <hr class="divisoria-titulo mb-0" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+
+          <div class="col-md-4">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div id="map" class="col-md-4">
+            <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+              });
+            }
+            </script>
+
+          </div>
+        </div>
+
+      </section>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo9TiFn16xSerSLVjrdzYGr1k8sbnQcL4&callback=initMap"
+          async defer>
+      </script>
 
 
 		<script src="js/jquery-3.4.1.min.js"></script>
