@@ -217,12 +217,17 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 /*---------------------------------------------------------------------------------------*/
 
 #contato{
+  color:#FFFFFF;
   width: 100%;
-
-  background-repeat: no-repeat;
+  padding-top: 3%;
+  padding-left: 5% ;
+  padding-right: 5%;
+  padding-bottom: 2%;
   background-size: cover;
-
-  background-image:url("/images/holiday-inn-natal---rn-4049553059-16x5.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background:url("../images/holiday-inn-natal---rn-4049553059-16x5.jpeg"), rgba(0,0,0,0.5);
+  background-blend-mode: multiply;
 }
 
 /*--------------------------------------------------------*/
