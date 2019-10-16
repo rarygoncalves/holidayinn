@@ -7,23 +7,38 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 
 }
+* {
+  box-sizing: border-box;
+}
 
 /*--- Media Queries (Podemos adicionar um ponto de interrupção em que certas partes do
- design se comportarão de maneira diferente em cada lado do ponto de interrupção.)--*/
+design se comportarão de maneira diferente em cada lado do ponto de interrupção.)--*/
 
 /*---------------------------------------------------------------------------------------*/
 
 /*CLASSES COMPARTILHADAS*/
 
 /*---------------------------------------------------------------------------------------*/
+.drk:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+} 
+
 .divisoria-titulo{
-    width: 16rem;
-    border-top: 0.5rem solid #43A23B; 
-    padding-bottom: 4% !important;
+  width: 16rem;
+  border-top: 0.5rem solid #43A23B; 
+  padding-bottom: 4% !important;
 }
 .secao-titulo{
-    text-align: center;
-    font-size: 2.7rem;
+  text-align: center;
+  font-size: 2.7rem;
 }
 .btn {
 	color: #ffffff !important;
@@ -33,14 +48,14 @@ html, body {
 }
 
 .card-img-top{
-    min-height: 200px!important;
-    width: 100%;
-    max-width: 100%;
-    display: block;
+  min-height: 200px!important;
+  width: 100%;
+  max-width: 100%;
+  display: block;
 
 }
 .card-body{
-    background-color: #FAFAFA!important;
+  background-color: #FAFAFA!important;
 }
 
 
@@ -55,44 +70,74 @@ html, body {
 .carousel-caption {
 	position: absolute;
 	transform: translateY(-50%);
-    top: 58%;
-    text-shadow: 0px 2px 8px #000000b0;
+  top: 58%;
+  text-shadow: 0px 2px 8px #000000b0;
 }
 .carousel-caption h1 {
-    font-size: 2.5rem;
-    
+  font-size: 2.5rem;
+  
 
 }
 .carousel-caption h5 {
 	font-size: 1.5rem;
 	padding-bottom: 2rem;
 }
+/*---------------------------------------------------------------------------------------*/
 
+/*QUEM SOMOS*/
+
+.teste{
+  margin: 10px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+.teste .card{
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  background: #43A23B;
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: justify;
+  box-shadow: 4px 4px 4px #c4c4c4;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.teste .card h2{
+  text-align: center;
+}
+
+.quemSomosTitle{
+    color: #092601;
+    text-shadow: 2px 2px 2px #c4c4c4;
+}
 /*---------------------------------------------------------------------------------------*/
 
 /*SEÇÃO PROMOÇÕES*/
 
-/*---------------------------------------------------------------------------------------*/
+
 .promocao-card{
 
-   color:#092601;
-   margin:0.3%;
-   margin-bottom: 8%;
-   text-align: justify;
-   height:28rem !important;
-   border:0px !important;
-   background-color: #FAFAFA!important;
+ color:#092601;
+ margin:0.3%;
+ margin-bottom: 8%;
+ text-align: justify;
+ height: 28rem !important;
+ border: 0px !important;
+ background-color: #FAFAFA!important;
 
 }
 
 #promocoes{
-    padding-top: 3%;
-    padding-left: 19% ;
-    padding-right: 19%;
-    padding-bottom: 4%;
-    width:100%;
-    background-color:#A7D384;
-    color:#FFFFFF;
+  padding-top: 3%;
+  padding-left: 19% ;
+  padding-right: 19%;
+  padding-bottom: 4%;
+  width:100%;
+  background-color:#A7D384;
+  color:#FFFFFF;
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -102,67 +147,67 @@ html, body {
 /*---------------------------------------------------------------------------------------*/
 #acomodacoes{
 
-    background-color:#FAFAFA;
-    padding-top: 3%;
-    padding-left: 19% ;
-    padding-right: 19%;
-    padding-bottom: 4%;
+  background-color:#FAFAFA;
+  padding-top: 3%;
+  padding-left: 5% ;
+  padding-right: 5%;
+  padding-bottom: 2%;
 }
 .card-acomodacao{
-    max-width: 330px!important;
-    min-width: 275px;
-    margin:2%;
-    padding:0%!important;
+  max-width: 330px!important;
+  min-width: 275px;
+  margin:2%;
+  padding:0%!important;
 }
 
 
 .card-body-acomodacao{
-    color:#FFFFFF;
-    /* background-color: #43A23B!important; */
-    text-align: justify;
-    border:0px !important;
-    height:10rem !important;
-    
-    
+  color:#FFFFFF;
+  /* background-color: #43A23B!important; */
+  text-align: justify;
+  border:0px !important;
+  height:10rem !important;
+  
+  
 }
 .card-img-top.img-acomodacoes{
-    min-height: 330px!important;
-    object-fit: cover;
+  min-height: 330px!important;
+  object-fit: cover;
 }
 
 .card-body.card-body-acomodacao{
-    background-color: #43A23B!important;
+  background-color: #43A23B!important;
 }
 .card-body.card-icon-acomodacao{
-    background-color: #43A23B!important;
+  background-color: #43A23B!important;
 
 }
 
 .icon-acomodacoes{
-    font-size: 2rem;
-    color:#FFFFFF;
+  font-size: 2rem;
+  color:#FFFFFF;
 }
 
 /*DESCRIÇÃO ACOMODAÇÕES*/
 .container-overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    text-align: justify;
-    padding:10%;
-    padding-bottom: 15;
-    padding-top: 15%;
-    opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: justify;
+  padding:10%;
+  padding-bottom: 15;
+  padding-top: 15%;
+  opacity: 0;
 }
 .card-acomodacao:hover .container-overlay{
-    opacity: 1.0;
-    color:#FFFFFF;
-    background-color: #43A23B;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  opacity: 1.0;
+  color:#FFFFFF;
+  background-color: #43A23B;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 .card-acomodacao:hover .icon-acomodacoes{
-    opacity: 0;
+  opacity: 0;
 }
 
 
@@ -184,17 +229,18 @@ html, body {
 		width: 70%;
 	}
 
-    .promocao-card{
-        
-        margin:0.3%!important;
-    }
-    #promocoes{
-        padding-top: 5%;
-        padding-left: 10%!important;
-        padding-right: 10%!important;
-        padding-bottom: 5%;
+  .promocao-card{
 
-    }
+    margin:0.3%!important;
+  }
+  #promocoes{
+    padding-top: 5%;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+    padding-bottom: 5%;
+
+  }
+  
 }
 
 @media (max-width: 991px) {
@@ -213,19 +259,19 @@ html, body {
 		width: 70%;
 	}
 
-    .promocao-card{
-        
-        margin:0.2%!important;
+  .promocao-card{
 
-    }
-    #promocoes{
+    margin:0.2%!important;
 
-        padding-top: 5%;
-        padding-left: 30% ;
-        padding-right: 30%;
-        padding-bottom: 5%;
+  }
+  #promocoes{
 
-    }
+    padding-top: 5%;
+    padding-left: 30% ;
+    padding-right: 30%;
+    padding-bottom: 5%;
+
+  }
 }
 
 @media (max-width: 767px) {
@@ -243,35 +289,35 @@ html, body {
 	.carousel-caption .btn{
 		font-size: 1rem;
 		width: 50%;
-    }
-    .promocao-card{
-    
-        color:#092601;
-        margin:1%;
-        text-align: justify;
+  }
+  .promocao-card{
+
+    color:#092601;
+    margin:1%;
+    text-align: justify;
 
     
-    }
-    .titulo-card-promocao{
-        text-align: center;
-    }
-    .promocao-card{
-        
-        margin:1%!important;
-    }
-    .secao-conteudo p{
-        font-size: 0.9rem;
-    }
-    .secao-conteudo h5{
-		font-size: 1.2rem;
+  }
+  .titulo-card-promocao{
+    text-align: center;
+  }
+  .promocao-card{
 
-	}
-    #promocoes{
-        padding-top: 4%;
-        padding-left: 25%;
-        padding-right: 25%;
-        padding-bottom: 4%;
-    }
+    margin:1%!important;
+  }
+  .secao-conteudo p{
+    font-size: 0.9rem;
+  }
+  .secao-conteudo h5{
+    font-size: 1.2rem;
+
+  }
+  #promocoes{
+    padding-top: 4%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 4%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -291,26 +337,39 @@ html, body {
 	.carousel-caption .btn{
 		font-size: 0.5rem;
 		width: 50%;
-    }
-    .promocao-card{
-        
-        margin:0.3%!important;
-    }
-    .secao-conteudo p{
-        font-size: 0.8rem;
-    }
-    .secao-conteudo h5{
-		font-size: 1rem;
+  }
+  .promocao-card{
 
-	}
-    #promocoes{
+    margin:0.3%!important;
+  }
+  .secao-conteudo p{
+    font-size: 0.8rem;
+  }
+  .secao-conteudo h5{
+    font-size: 1rem;
 
-        padding-top: 0%;
-        padding-left: 10% !important;
-        padding-right: 10%!important;
-        padding-bottom: 0%;
+  }
+  #promocoes{
 
-    }
+    padding-top: 0%;
+    padding-left: 10% !important;
+    padding-right: 10%!important;
+    padding-bottom: 0%;
+
+  }
+
+  .teste .card{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    background: #43A23B;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    color: #FFFFFF;
+    border-radius: 5px;
+  }
 }	
 
 /*
@@ -365,13 +424,10 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
-
-
-
