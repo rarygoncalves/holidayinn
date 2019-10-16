@@ -2,10 +2,15 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
 from django.http import HttpResponse
+from institucional.models import Home
+from promocoes.models import Promocoes
+from acomodacoes.models import Quartos
 
 # Create your views here.
 
 def index(request):
+
+    # Configurando formulário
     if request.method == 'POST':
         nome = request.POST['nome']
         cel = request.POST['cel']
@@ -19,4 +24,8 @@ def index(request):
         ['traineeholidayinn@gmail.com'],
         fail_silently=False)
 
-    return render(request, 'core/index.html')
+    list_home = Home.objects.all()
+    list_promocoes = Promocoes.objects.all()
+    list_quartos = Quartos.objects.all()
+
+    return render(request, 'index.html', {'list_home': list_home, 'list_promocoes': list_promocoes, 'list_quartos': list_quartos})
