@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     'promocoes',
 ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'core', 'media')
+MEDIA_URL = '/media/'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
