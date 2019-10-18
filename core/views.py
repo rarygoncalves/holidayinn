@@ -6,6 +6,7 @@ from institucional.models import Home
 from institucional.models import Quemsomos
 from promocoes.models import Promocoes
 from acomodacoes.models import Quartos
+from institucional.models import Contato
 
 # Create your views here.
 
@@ -29,5 +30,6 @@ def index(request):
     quemsomos = Quemsomos.objects.get(pk=1)
     list_promocoes = Promocoes.objects.all()
     list_quartos = Quartos.objects.all()
+    contato = Contato.objects.get(pk=1)
 
-    return render(request, 'index.html', {'list_home': list_home, 'quemsomos': quemsomos, 'list_promocoes': list_promocoes, 'list_quartos': list_quartos})
+    return render(request, 'index.html', {'list_home': list_home, 'quemsomos': quemsomos, 'list_promocoes': list_promocoes, 'list_quartos': list_quartos, 'contato': contato})

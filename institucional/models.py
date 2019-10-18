@@ -20,7 +20,7 @@ class Home(models.Model):
             verbose_name_plural = 'Slides'
 
 class Quemsomos(models.Model):
-    title = 'Cards Missão / Visão / Valores'
+    title = 'Missão | Visão | Valores'
     description = models.TextField(max_length=300, verbose_name = 'Descrição')
     mission = models.TextField(max_length=300, verbose_name = 'Missão')
     vision = models.TextField(max_length=300, verbose_name = 'Visão')
@@ -32,3 +32,17 @@ class Quemsomos(models.Model):
     class Meta:
             verbose_name = 'Quem Somos'
             verbose_name_plural = 'Quem Somos'
+
+class Contato(models.Model):
+    title = 'Endereço | Telefone | Email'
+    address = models.TextField(max_length=100, verbose_name = 'Endereço')
+    telephone = models.TextField(max_length=100, verbose_name = 'Telefone')
+    email = models.TextField(max_length=100, verbose_name = 'Email')
+
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+            verbose_name = 'Contato'
+            verbose_name_plural = 'Contato'
