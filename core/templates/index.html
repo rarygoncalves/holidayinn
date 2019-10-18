@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,13 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Holiday inn</title>
-	<!-- {% load static %} -->
 	<!--css-->
-	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="static/css/all.min.css" />
-	<link rel="stylesheet" type="text/css" href="static/css/slick.css" />
-	<link rel="stylesheet" type="text/css" href="static/css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}" />
 
 
 </head>
@@ -81,7 +81,7 @@
 			<div class="card">
 				<div class="layer"></div>
 				<div class="">
-					<img src="static/images/icon1.png" class="card-img-top">
+					<img src="{% static 'images/icon1.png' %}" class="card-img-top">
 				</div>
 				<div class="details">
 					<h2>Nossa missão</h2>
@@ -93,7 +93,7 @@
 			<div class="card">
 				<div class="layer"></div>
 				<div class="img">
-					<img src="static/images/icon2.png" class="card-img-top">
+					<img src="{% static 'images/icon2.png' %}" class="card-img-top">
 				</div>
 				<div class="details">
 					<h2>Nossa visão</h2>
@@ -105,7 +105,7 @@
 			<div class="card">
 				<div class="layer"></div>
 				<div class="img">
-					<img src="static/images/icon3.png" class="card-img-top">
+					<img src="{% static 'images/icon3.png' %}" class="card-img-top">
 				</div>
 				<div class="details">
 					<h2>Valores</h2>
@@ -276,12 +276,12 @@
 	</footer>
 
 
-	<script src="static/js/jquery-3.4.1.min.js"></script>
-	<script src="static/js/jquery-migrate-3.1.0.min.js"></script>
-	<script src="static/js/slick.js"></script>
-	<script src="static/js/slick.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/main.js"></script>
+	<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+	<script src="{% static 'js/jquery-migrate-3.1.0.min.js' %}"></script>
+	<script src="{% static 'js/slick.js' %}"></script>
+	<script src="{% static 'js/slick.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>

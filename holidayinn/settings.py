@@ -36,6 +36,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 ALLOWED_HOSTS = []
 
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'core', 'media')
+MEDIA_URL = '/media/'
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'core', 'static')
+STATIC_URL = '/static/'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -50,9 +60,6 @@ INSTALLED_APPS = [
     'institucional',
     'promocoes',
 ]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'core', 'media')
-MEDIA_URL = '/media/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,9 +134,3 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-STATIC_URL = '/static/'

@@ -226,7 +226,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   background-size: cover!important;
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
-  background:url("../static/images/holidayinn-contato.png"), rgba(0,0,0,0.6);
+  background: url("../images/holidayinn-contato.png"), rgba(0,0,0,0.6);
   background-blend-mode: multiply;
 
 }
