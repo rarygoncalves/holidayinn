@@ -18,7 +18,7 @@ $('.carousel-promocao').slick({
       }
     },
     {
-      breakpoint: 1400,
+      breakpoint: 991,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -27,7 +27,7 @@ $('.carousel-promocao').slick({
       }
     },
     {
-      breakpoint: 780,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
