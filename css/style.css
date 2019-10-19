@@ -155,7 +155,8 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 }
 .card-acomodacao{
   max-width: 330px!important;
-  min-width: 275px;
+  min-width: 275px!important;
+
   margin:2%;
   padding:0%!important;
 }
@@ -179,9 +180,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 }
 .card-body.card-icon-acomodacao{
   background-color: #43A23B!important;
-
 }
-
 .fa-smoking-ban.icon-acomodacoes{
   font-size: 3rem;
   color:#FFFFFF;   
@@ -232,7 +231,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   background-attachment: fixed!important;
   background:url("../images/holidayinn-contato.png"), rgba(0,0,0,0.6);
   background-blend-mode: multiply;
-
 }
 
 .telefone-contato{
@@ -275,11 +273,8 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     font-size: 1.5rem !important;
   }
   .card-body.card-body-acomodacao.h3{
-    font-size: 1.3rem !important;
+    font-size: 1.6rem !important;
   }
-
-
-
   .telefone-contato{
     border-right: 1px solid rgba(250, 250, 250, 0.562);
     border-left: 1px solid rgba(250, 250, 250, 0.562);
@@ -316,13 +311,12 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 
   }
 
-  
   /*Acomodações*/
-  .card-body.card-body-acomodacao.h4{
-    font-size: 0.8rem !important;
+  .card-body.card-body-acomodacao h4{
+    font-size: 1.4rem !important;
   }
-  .card-body.card-body-acomodacao.h3{
-    font-size: 0.6rem !important;
+  .card-body.card-body-acomodacao h3{
+    font-size: 1.5rem !important;
   }
   .fa-smoking-ban.icon-acomodacoes{
     font-size: 2rem;
@@ -331,7 +325,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     font-size: 1.5rem;
   }
   .icon-acomodacoes-conteudo{
-    margin:0.5%;
+    margin:0.4%;
   }
   #acomodacoes{
     padding-top: 3%;
@@ -344,6 +338,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     border-right: 1px solid rgba(250, 250, 250, 0)!important;
     border-left: 1px solid rgba(250, 250, 250, 0)!important;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -382,7 +377,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   }
   .secao-conteudo h5{
     font-size: 1.2rem;
-
   }
   #promocoes{
     padding-top: 4%;
@@ -390,18 +384,17 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     padding-right: 12%!important;
     padding-bottom: 4%;
   }
+
   /*Acomodações*/
   
-  .card-body.card-body-acomodacao.h4{
-    font-size: 1.5rem !important;
+  
+  .card-body.card-body-acomodacao h4{
+    font-size: 1.3rem !important;
   }
-  #acomodacoes{
-    padding-top: 0.5%;
-    padding-left: 1%!important;
-    padding-right: 1%!important;
-    padding-bottom: 0.5%;
+  .card-body.card-body-acomodacao h3{
+    font-size: 1.4rem !important;
   }
-
+  
   .telefone-contato{
     border-right: 1px solid rgba(250, 250, 250, 0)!important;
     border-left: 1px solid rgba(250, 250, 250, 0)!important;
@@ -431,12 +424,14 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     margin:0.3%!important;
   }
   .secao-conteudo p{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .secao-conteudo h5{
-    font-size: 1rem;
+    font-size: 1.3rem;
 
   }
+
+  /*Acomodações*/
 
 
   .teste .card{
