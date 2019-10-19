@@ -34,7 +34,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 .divisoria-titulo{
   width: 16rem;
   border-top: 0.5rem solid #43A23B;
-  padding-bottom: 4% !important;
+  padding-bottom: 5% !important;
 }
 .secao-titulo{
   text-align: center;
@@ -148,10 +148,10 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 #acomodacoes{
 
   background-color:#FAFAFA;
-  padding-top: 3%;
+  padding-top: 4%;
   padding-left: 5% ;
   padding-right: 5%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 }
 .card-acomodacao{
   max-width: 330px!important;
@@ -160,14 +160,13 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   padding:0%!important;
 }
 
-
 .card-body-acomodacao{
   color:#FFFFFF;
   /* background-color: #43A23B!important; */
   text-align: justify;
   border:0px !important;
-  height:10rem !important;
-
+  max-height:9rem !important;
+  padding-bottom: 5%!important;
 
 }
 .card-img-top.img-acomodacoes{
@@ -181,6 +180,11 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 .card-body.card-icon-acomodacao{
   background-color: #43A23B!important;
 
+}
+
+.fa-smoking-ban.icon-acomodacoes{
+  font-size: 3rem;
+  color:#FFFFFF;   
 }
 
 .icon-acomodacoes{
@@ -254,7 +258,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 		font-size: 1rem;
 		width: 70%;
 	}
-
   .promocao-card{
 
     margin:0.3%!important;
@@ -266,6 +269,16 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     padding-bottom: 5%;
 
   }
+  
+  /*Acomodações*/
+  .card-body.card-body-acomodacao.h4{
+    font-size: 1.5rem !important;
+  }
+  .card-body.card-body-acomodacao.h3{
+    font-size: 1.3rem !important;
+  }
+
+
 
   .telefone-contato{
     border-right: 1px solid rgba(250, 250, 250, 0.562);
@@ -289,7 +302,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 		font-size: 1rem;
 		width: 70%;
 	}
-
   .promocao-card{
 
     margin:0.2%!important;
@@ -304,9 +316,33 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 
   }
 
+  
+  /*Acomodações*/
+  .card-body.card-body-acomodacao.h4{
+    font-size: 0.8rem !important;
+  }
+  .card-body.card-body-acomodacao.h3{
+    font-size: 0.6rem !important;
+  }
+  .fa-smoking-ban.icon-acomodacoes{
+    font-size: 2rem;
+  }
+  .icon-acomodacoes{
+    font-size: 1.5rem;
+  }
+  .icon-acomodacoes-conteudo{
+    margin:0.5%;
+  }
+  #acomodacoes{
+    padding-top: 3%;
+    padding-left: 4%!important;
+    padding-right: 4%!important;
+    padding-bottom: 3%;
+  }
+
   .telefone-contato{
-    border-right: 1px solid rgba(250, 250, 250, 0.562);
-    border-left: 1px solid rgba(250, 250, 250, 0.562);
+    border-right: 1px solid rgba(250, 250, 250, 0)!important;
+    border-left: 1px solid rgba(250, 250, 250, 0)!important;
   }
 }
 
@@ -354,10 +390,21 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     padding-right: 12%!important;
     padding-bottom: 4%;
   }
+  /*Acomodações*/
+  
+  .card-body.card-body-acomodacao.h4{
+    font-size: 1.5rem !important;
+  }
+  #acomodacoes{
+    padding-top: 0.5%;
+    padding-left: 1%!important;
+    padding-right: 1%!important;
+    padding-bottom: 0.5%;
+  }
 
   .telefone-contato{
-    border-right: 1px solid rgba(250, 250, 250, 0.562);
-  border-left: 1px solid rgba(250, 250, 250, 0.562);
+    border-right: 1px solid rgba(250, 250, 250, 0)!important;
+    border-left: 1px solid rgba(250, 250, 250, 0)!important;
   }
 }
 
