@@ -2,6 +2,8 @@
 /* Fonte montserrat do google */
 
 html, body {
+  padding: 0;
+  margin: 0;
   height: 100%; /* Essencial para a responsividade */
   width: 100%;	/* Essencial para a responsividade */
   font-family: 'Montserrat', sans-serif;
@@ -87,11 +89,10 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 /*QUEM SOMOS*/
 
 .teste{
-  margin: 10px auto 100px;
+  margin: 6px auto 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px;
 }
+
 .teste .card{
   position: relative;
   width: 350px;
@@ -112,6 +113,20 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 .quemSomosTitle{
   color: #092601;
   text-shadow: 2px 2px 2px #c4c4c4;
+}
+
+.iconQ{
+  text-align: center;
+}
+
+.card .iconQ{
+  font-size: 100px;
+  margin: 0px 0px 0px 0px;
+  color: #AAD900;
+}
+
+.quemSomosP{
+  padding: 0px 10% 0px 10%;
 }
 /*---------------------------------------------------------------------------------------*/
 
@@ -159,7 +174,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   margin:2%;
   padding:0%!important;
 }
-
 
 .card-body-acomodacao{
   color:#FFFFFF;
@@ -308,6 +322,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     border-right: 1px solid rgba(250, 250, 250, 0.562);
     border-left: 1px solid rgba(250, 250, 250, 0.562);
   }
+
 }
 
 @media (max-width: 767px) {
@@ -366,11 +381,11 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 		top: 45%;
 	}
 	.carousel-caption h1{
-		font-size: 1rem;
+		font-size: 1.7rem;
 	}
 	.carousel-caption h5{
-		font-size: 0.7rem;
-		padding-bottom: 1rem;
+		font-size: 1rem;
+		padding-bottom: 0.3rem;
 	}
 	.carousel-indicators{
 		display: none;
@@ -388,10 +403,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   }
   .secao-conteudo h5{
     font-size: 1rem;
-
   }
-
-
   .teste .card{
     position: relative;
     width: 300px;
@@ -408,6 +420,17 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     border-right: 1px solid rgba(250, 250, 250, 0)!important;
     border-left: 1px solid rgba(250, 250, 250, 0)!important;
   }
+
+  .quemSomosTitle{
+    font-size: 1.6rem;
+  }
+  .quemSomosP{
+    font-size: 0.9rem;
+  }
+  .details{
+    font-size: 1rem;
+  }
+
 }
 
 /*
@@ -519,8 +542,8 @@ figure {
 }
 
 .credits{
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 /* Footer */
 footer{
@@ -542,14 +565,13 @@ footer{
   display: block;
   font-size: 20px;
   color: #fff;
-  position: fixed;
 }
 
 #floatbtn div{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #43A23B;
-    line-height: 50px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #43A23B;
+  line-height: 50px;
 }
