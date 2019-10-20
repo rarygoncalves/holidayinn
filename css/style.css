@@ -484,7 +484,22 @@ h1.secao-titulo, h1{
   }
 
 }
+@media (max-width: 400px) {
 
+
+  .promocao-card{
+
+    margin:0.2%!important;
+  }
+  #promocoes{
+    padding-top: 2%;
+    padding-left: 3%!important;
+    padding-right: 3%!important;
+    padding-bottom: 2%;
+  }
+  
+
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
