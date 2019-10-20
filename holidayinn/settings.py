@@ -33,7 +33,7 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['goncalvesrary.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'core', 'media')

@@ -21,7 +21,7 @@ class Home(models.Model):
 
 class Quemsomos(models.Model):
     title = 'Missão | Visão | Valores'
-    description = models.TextField(max_length=300, verbose_name = 'Descrição')
+    description = models.TextField(max_length=200, verbose_name = 'Descrição')
     mission = models.TextField(max_length=300, verbose_name = 'Missão')
     vision = models.TextField(max_length=300, verbose_name = 'Visão')
     value = models.TextField(max_length=300, verbose_name = 'Valores')
