@@ -74,9 +74,21 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 }
 
 #quemsomos #acomodacoes{
-  background-color:#FAFAFA;
+  background-color: #FAFAFA;
 }
+/*---------------------------------------------------------------------------------------*/
 
+/* NAVBAR */
+#nav{
+  background-color: #fafafa !important;
+  border-bottom: 2px solid #65a603;
+}
+.nav-item {
+   color: #428327 !important;
+}
+.nav-item:hover {
+   color: #96ba12 !important;
+}
 
 /*---------------------------------------------------------------------------------------*/
 
