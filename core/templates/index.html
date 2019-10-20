@@ -6,116 +6,143 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Holiday inn</title>
+	<title>Holiday Inn</title>
+	<link rel="icon" href="{% static 'images/iconeTitle.png' %}" type="image/png" sizes="16x16">
+	<!-- Icons CDN -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}" />
-
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5dac924ddf22d91339a01876/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 
 </head>
 
 <body>
-	<!--------------------------------------------------------------------------------------------------------->
+	<!-- ************************************************************************************************************** ->
 
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#">Navbar</a>
+	<!- navbar -->
+	<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<img src="{% static 'images/logo.png' %}" width="120px" height="auto" class="d-inline-block align-top" alt="">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Quem Somos</a>
-				<a class="nav-item nav-link" href="#">Promoções</a>
-				<a class="nav-item nav-link" href="#">Acomodações</a>
-				<a class="nav-item nav-link" href="#">Contato</a>
-			</div>
-		</div>
-	</nav>
-
-	<!--------------------------------------------------------------------------------------------------------->
-
-	<!-- Slider -->
-	<div id="slides" class="carousel slide" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			{% for home in list_home %}
-        {% if home.active %}
-					<div class="carousel-item drk active">
-				{% else %}
-	      	<div class="carousel-item drk">
-	      {% endif %}
-					<img src="{{ home.image.url }}">
-					<div class="carousel-caption">
-						<h1>{{ home.title }}</h1>
-						<h5>{{ home.description }}</h5>
-						<button class="btn" name="button">Ver acomodações</button>
-					</div>
-				</div>
-			{% endfor %}
+		aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+		<div class="navbar-nav mr-2">
+			<a class="nav-item nav-link mr-2" href="#Home"><b>Home</b><span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link mr-2" href="#quemsomos"><b>Quem Somos</b></a>
+			<a class="nav-item nav-link mr-2" href="#promocoes"><b>Promoções</b></a>
+			<a class="nav-item nav-link mr-2" href="#acomodacoes"><b>Acomodações</b></a>
+			<a class="nav-item nav-link mr-2" href="#contato"><b>Contato</b></a>
 		</div>
 	</div>
+</nav>
+
+	<!-- ************************************************************************************************************** ->
+
+	<!- Slider -->
+	<section id="Home">
+		<div class="slidershow">
+			<div id="slides" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#slides" data-slide-to="0" class="active"></li>
+					<li data-target="#slides" data-slide-to="1"></li>
+					<li data-target="#slides" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					{% for home in list_home %}
+					{% if home.active %}
+						<div class="carousel-item drk active">
+					{% else %}
+		      	<div class="carousel-item drk">
+		      {% endif %}
+						<img src="{{ home.image.url }}">
+						<div class="carousel-caption">
+							<h1>{{ home.title }}</h1>
+							<p>{{ home.description }}</p>
+							<button class="btn" name="button"><a href="#acomodacoes">Ver acomodações</a></button>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 	<!--************************************************************************-->
 
 	<!--Quem somos-->
-	<div class="container">
-		<div class="row justify-content-center text-center">
-			<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4">
-				<h1 class="quemSomosTitle"><strong>Quem somos</strong></h1>
-				<p class="quemSomosTitle">{{ quemsomos.description }}</p>
-				<hr class="divisoria-titulo mb-0" />
-			</div>
-		</div>
-		<div class="teste">
-			<div class="card">
-				<div class="layer"></div>
-				<div class="">
-					<img src="{% static 'images/icon1.png' %}" class="card-img-top">
-				</div>
-				<div class="details">
-					<h2>Nossa missão</h2>
-				</div>
-				<div class="content">
-					<p>{{ quemsomos.mission }}</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="layer"></div>
-				<div class="img">
-					<img src="{% static 'images/icon2.png' %}" class="card-img-top">
-				</div>
-				<div class="details">
-					<h2>Nossa visão</h2>
-				</div>
-				<div class="content">
-					<p>{{ quemsomos.vision }}</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="layer"></div>
-				<div class="img">
-					<img src="{% static 'images/icon3.png' %}" class="card-img-top">
-				</div>
-				<div class="details">
-					<h2>Valores</h2>
-				</div>
-				<div class="content">
-					<p>{{ quemsomos.value }}</p>
+	<section id="quemsomos" class="secao-conteudo">
+		<div class="container-fluid">
+			<div class="row justify-content-center text-center">
+				<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4">
+					<h1 class="secao-titulo"><strong>Quem somos</strong></h1>
+					<hr class="divisoria-titulo mb-0" />
+					<p class="quemSomosP">{{ quemsomos.description }}</p>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div class="container-fluid">
+			<div class="row teste  justify-content-center">
+				<div class="col-sm-4 col-md-4 mb-3 card-quemsomos">
+					<div class="layer"></div>
+					<div class="iconQ">
+						<i class="fas fa-flag"></i>
+					</div>
+					<div class="details">
+						<h4><strong>Missão</strong></h4>
+					</div>
+					<div class="content">
+						<p>{{ quemsomos.mission }}</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 mb-3 card-quemsomos">
+					<div class="layer"></div>
+					<div class="iconQ">
+						<i class="fas fa-users"></i>
+					</div>
+					<div class="details">
+						<h4><strong>Visão</strong></h4>
+					</div>
+					<div class="content">
+						<p>{{ quemsomos.vision }}</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 mb-3 card-quemsomos">
+					<div class="layer"></div>
+					<div class="iconQ">
+						<i class="fas fa-lightbulb"></i>
+					</div>
+					<div class="details">
+						<h4><strong>Valores</strong></h4>
+					</div>
+					<div class="content">
+						<p>{{ quemsomos.value }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 	<!--************************************************************************-->
@@ -134,10 +161,10 @@
 				<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
 					<div class="carousel-promocao responsive autoplay">
 						{% for promocoes in list_promocoes %}
-							<div class="card promocao-card shadow mb-5">
+							<div class="card promocao-card">
 								<img src="{{ promocoes.image.url }}" class="card-img-top">
 								<div class="card-body">
-									<h5 class="card-title text-center"><strong>{{ promocoes.title }}</strong></h5>
+									<h4 class="card-title text-center"><strong>{{ promocoes.title }}</strong></h4>
 									<p class="card-text text-promocao">{{ promocoes.description }}</p>
 								</div>
 							</div>
@@ -164,117 +191,149 @@
 			<div class="row justify-content-center">
 				<!--Card 1-->
 				{% for quartos in list_quartos %}
-				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 card-acomodacao">
-					<div class="card shadow-lg mb-5">
-						<div class="container-overlay">
-							<!--Descrição-->
-							<h4 class="text-center m-3"><strong>{{ quartos.title }}</strong></h4>
-							<p class="card-text text-promocao">{{ quartos.description }}</p>
-						</div>
-						<!--Preço-->
-						<img src="{{ quartos.image.url}}" class="card-img-top  img-acomodacoes">
-						<div class="card-body card-body-acomodacao">
-							<h4 class="card-title"><strong>{{ quartos.title}}</strong></h4>
-							<p class="card-text text-promocao">
-								A partir de
-							</p>
-							<h3><strong>{{ quartos.price}} BRL</strong></h3>
-						</div>
-						<div class="card-body card-icon-acomodacao p-0 rounded-bottom">
-							<div class="row justify-content-center text-center">
-								<div class="col-md-2">
-									{% if quartos.smoke %}
-										<i class="fas fa-smoking icon-acomodacoes"></i>
-									{% else %}
-										<i class="fas fa-smoking-ban icon-acomodacoes"></i>
-									{% endif %}
-								</div>
-								<div class="col-md-4">
-									<span class="icon-acomodacoes">{{ quartos.peoples }}</span>
-									<i class="far fa-user icon-acomodacoes"></i>
+					<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 card-acomodacao rounded">
+						<div class="card">
+							<div class="container-overlay rounded">
+								<!--Descrição-->
+								<h4 class="text-center m-3"><strong>{{ quartos.title }}</strong></h4>
+								<p class="card-text text-promocao">{{ quartos.description }}</p>
+							</div>
+							<!--Preço-->
+							<img src="{{ quartos.image.url }}" class="card-img-top  img-acomodacoes">
+							<div class="card-body card-body-acomodacao">
+								<h4 class="card-title"><strong>{{ quartos.title }}</strong></h4>
+								<p class="card-text text-promocao">A partir de</p>
+								<h3><strong>{{ quartos.price }} BRL</strong></h3>
+							</div>
+							<div class="card-body card-icon-acomodacao rounded-bottom">
+								<div class="justify-content-center text-center">
+									<div class="d-inline p-3">
+										{% if quartos.smoke %}
+											<i class="fas fa-smoking icon-acomodacoes"></i>
+										{% else %}
+											<i class="fas fa-smoking-ban icon-acomodacoes"></i>
+										{% endif %}
+									</div>
+									<div class="d-inline p-3">
+										<span class="icon-acomodacoes">3</span>
+										<i class="far fa-user icon-acomodacoes"></i>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 				{% endfor %}
 			</div>
 		</div>
 
 
-	</section>
+		</section>
 
+		<!--************************************************************************-->
 
-	<!--************************************************************************-->
+		<!--Contato-->
 
-	<!--Contato-->
-
-	<!--************************************************************************-->
-
-	<!--Contato-->
-
-	<section id="contato" class="secao-conteudo">
-		<div class="container-fluid">
-			<div class="row justify-content-center text-center">
-				<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-0">
-					<h1 class="secao-titulo"><strong>Contato</strong></h1>
-					<hr class="divisoria-titulo mb-0" />
+		<section id="contato" class="secao-conteudo">
+			<div class="container-fluid">
+				<div class="row justify-content-center text-center">
+					<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-0">
+						<h1 class="secao-titulo"><strong>Contato</strong></h1>
+						<hr class="divisoria-titulo mb-0" />
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center text-center">
-				<div class="col-md-2">
-					<h3>Endereço</h3>
-					<p>{{ contato.address }}</p>
+				<div class="row justify-content-center text-center">
+					<div class="texto-contato  col-md-2">
+						<h4><strong>Endereço</strong></h4>
+						<p>{{ contato.address }}</p>
+					</div>
+					<div class="col-md-2 texto-contato  telefone-contato">
+						<h4><strong>Telefone</strong></h4>
+						<p>{{ contato.telephone }}</p>
+					</div>
+					<div class="col-md-2 texto-contato">
+						<h4><strong>Email</strong></h4>
+						<p>{{ contato.email }}</p>
+					</div>
 				</div>
-				<div class="col-md-2 telefone-contato">
-					<h3>Telefone</h3>
-					<p>{{ contato.telephone }}</p>
-				</div>
-				<div class="col-md-2">
-					<h3>Email</h3>
-					<p>{{ contato.email }}</p>
-				</div>
-			</div>
-			<div class="row justify-content-center">
+				<div class="row justify-content-center">
 
-				<div class="col-md-4">
-					<form method="post" action="{% url 'index' %}">
-			      {% csrf_token %}
-						<div class="form-group">
-							<input type="text" name="nome" class="form-control" placeholder="Nome">
-						</div>
-						<div class="form-group">
-							<input type="tel" name="cel" class="form-control" placeholder="Seu melhor número">
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<input type="text" name="subject" class="form-control" placeholder="Assunto">
-						</div>
-						<div class="form-group">
-							<textarea name="message" class="form-control" rows="3" placeholder="Mensagem"></textarea>
-						</div>
-						<div>
-							<button type="submit" class="btn btn-primary">Enviar</button>
-						</div>
-					</form>
-				</div>
-				<div id="map" class="col-md-4 text-center">
-					<iframe
+					<div class="col-md-4 form-contato">
+						<form method="post" action="{% url 'index' %}">
+							{% csrf_token %}
+							<div class="form-group">
+								<input type="text" name="nome" class="form-control" placeholder="Nome">
+							</div>
+							<div class="form-group">
+								<input type="tel" name="cel" class="form-control" placeholder="Seu melhor número">
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" class="form-control" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="text" name="subject" class="form-control" placeholder="Assunto">
+							</div>
+							<div class="form-group">
+								<textarea name="message" class="form-control" rows="3" placeholder="Mensagem"></textarea>
+							</div>
+							<div class="col-sm-12 col-md-12 p-0">
+								<button type="submit" class="btn">Enviar</button>
+							</div>
+						</form>
+					</div>
+					<div id="map" class="col-md-4 text-center">
+						<iframe width="100%" height="350px" frameborder="0" scrolling="0" marginheight="0" marginwidth="0"
 						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15876.856810971001!2d-35.210017!3d-5.825392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbefe6a8f44268e!2sHoliday%20Inn%20Natal!5e0!3m2!1spt-BR!2sbr!4v1571367043470!5m2!1spt-BR!2sbr"
 						width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-		<div class="container text-center">
-			<small><b>Holiday Inn @ 2019.</b>	 Desenvolvido pela <b>EJECT</b></small>
-		</div>
-	</footer>
+		<!--*************************************************************************-->
 
+		<!--Footer-->
+
+		<footer id="sticky-footer" class="bg-dark text-white-50">
+			<div class="footerbtn">
+				<a href="https://www.facebook.com/holidaynatal.lagoanova/" target="_blank"><i
+					class="fab fa-facebook-square"></i></a>
+					<a href="https://www.instagram.com/explore/locations/953822571/holiday-inn-natal/" target="_blank"><i
+						class="fab fa-instagram"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=558433447333&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20quartos%20no%20Holiday%20inn%20Natal."
+						target="_blank"><i class="fab fa-whatsapp"></i></a>
+					</div>
+					<div class="credits">
+						<small><b>Holiday in @ 2019.</b> Desenvolvido pela <b><a id="Ej" target="_blank" href="http://www.ejectufrn.com.br">EJECT</a></b></small>
+					</div>
+				</footer>
+
+				<!--************************************************************************-->
+
+				<!-- Icones laterais -->
+
+				<div id="social">
+					<div id="one">
+						<a href="https://www.facebook.com/holidaynatal.lagoanova/" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</div>
+					<div>
+						<a href="https://www.instagram.com/explore/locations/953822571/holiday-inn-natal/" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+					<div id="last">
+						<a href="https://api.whatsapp.com/send?phone=558433447333&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20quartos%20no%20Holiday%20inn%20Natal."
+						target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+				</div>
+			</div>
+	<!-- <div id="floatbtn">
+		<div>
+			<i class="fas fa-envelope"></i>
+		</div>
+	</div> -->
 
 	<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
 	<script src="{% static 'js/jquery-migrate-3.1.0.min.js' %}"></script>
@@ -283,5 +342,4 @@
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
 </body>
-
 </html>
