@@ -9,3 +9,9 @@ Site desenvolvido para avaliação do Trainee 2019.2 da Empresa Júnior da Escol
 * HTML
 * CSS
 * JavaScript
+
+## Acesse o Site
+
+Para acessar o site, basta entrar no link abaixo:
+
+https://goncalvesrary.pythonanywhere.com/
