@@ -15,15 +15,27 @@
 	<link rel="stylesheet" type="text/css" href="css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5dac924ddf22d91339a01876/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="25">
 	<!--------------------------------------------------------------------------------------------------------->
 
 	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +43,11 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Quem Somos</a>
-				<a class="nav-item nav-link" href="#">Promoções</a>
-				<a class="nav-item nav-link" href="#">Acomodações</a>
-				<a class="nav-item nav-link" href="#">Contato</a>
+				<a class="nav-item nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="#quemsomos">Quem Somos</a>
+				<a class="nav-item nav-link" href="#promocoes">Promoções</a>
+				<a class="nav-item nav-link" href="#acomodacoes">Acomodações</a>
+				<a class="nav-item nav-link" href="#contato">Contato</a>
 			</div>
 		</div>
 	</nav>
@@ -43,42 +55,45 @@
 	<!--------------------------------------------------------------------------------------------------------->
 
 	<!-- Slider -->
-	<div class="slidershow">
-		<div id="slides" class="carousel slide" data-ride="carousel">
-			<ul class="carousel-indicators">
-				<li data-target="#slides" data-slide-to="0" class="active"></li>
-				<li data-target="#slides" data-slide-to="1"></li>
-				<li data-target="#slides" data-slide-to="2"></li>
-			</ul>
-			<div class="carousel-inner">
-				<div class="carousel-item drk active">
-					<img src="images/desk1.jpg">
-					<div class="carousel-caption">
-						<h1>Seja bem vindo!</h1>
-						<p>Planeje sua proxima aventura com um travesseiro firme e macio</p>
-						<button class="btn" name="button">Ver acomodações</button>
+	<section id="Home">
+		<div class="slidershow">
+			<div id="slides" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#slides" data-slide-to="0" class="active"></li>
+					<li data-target="#slides" data-slide-to="1"></li>
+					<li data-target="#slides" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item drk active">
+						<img src="images/desk1.jpg">
+						<div class="carousel-caption">
+							<h1>Seja bem vindo!</h1>
+							<p>Planeje sua proxima aventura com um travesseiro firme e macio</p>
+							<button class="btn" name="button"><a href="#acomodacoes">Ver acomodações</a></button>
+						</div>
 					</div>
-				</div>
-				<div class="carousel-item drk">
-					<img src="images/desk2.jpg">
-					<div class="carousel-caption">
-						<h1>Lorem ipsum dolor!</h1>
-						<p>Praesent blandit justo id mauris tempus pellentesque.</p>
-						<button class="btn" name="button">Ver acomodações</button>
+					<div class="carousel-item drk">
+						<img src="images/desk2.jpg">
+						<div class="carousel-caption">
+							<h1>Lorem ipsum dolor!</h1>
+							<p>Praesent blandit justo id mauris tempus pellentesque.</p>
+							<button class="btn" name="button"><a href="#acomodacoes">Ver acomodações</a></button>
+						</div>
 					</div>
-				</div>
-				<div class="carousel-item drk">
-					<img src="images/desk3.jpg">
-					<div class="carousel-caption">
-						<h1>Dolor ipsum lorem!</h1>
-						<p>Aenean aliquam, tortor a cursus semper, lacus urna vestibulum
-							elit.</p>
-						<button class="btn" name="button">Ver acomodações</button>
+					<div class="carousel-item drk">
+						<img src="images/desk3.jpg">
+						<div class="carousel-caption">
+							<h1>Dolor ipsum lorem!</h1>
+							<p>Aenean aliquam, tortor a cursus semper, lacus urna vestibulum
+								elit.</p>
+							<button class="btn" name="button"><a href="#acomodacoes">Ver acomodações</a></button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
 
 
 	<!--************************************************************************-->
@@ -90,7 +105,9 @@
 				<div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 pt-4">
 					<h1 class="secao-titulo"><strong>Quem somos</strong></h1>
 					<hr class="divisoria-titulo mb-0" />
-					<p class="quemSomosP">Aliquam eu urna nibh. In finibus metus id est tristique consequat. Vestibulum suscipit fringilla eros eu pretium. Aenean aliquam, tortor a cursus semper, lacus urna vestibulum elit. </p>
+					<p class="quemSomosP">Aliquam eu urna nibh. In finibus metus id est tristique consequat. Vestibulum
+						suscipit fringilla eros eu pretium. Aenean aliquam, tortor a cursus semper, lacus urna
+						vestibulum elit. </p>
 
 				</div>
 			</div>
@@ -466,9 +483,12 @@
 
 	<footer id="sticky-footer" class="bg-dark text-white-50">
 		<div class="footerbtn">
-			<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://www.facebook.com/holidaynatal.lagoanova/" target="_blank"><i
+					class="fab fa-facebook-square"></i></a>
+			<a href="https://www.instagram.com/explore/locations/953822571/holiday-inn-natal/" target="_blank"><i
+					class="fab fa-instagram"></i></a>
+			<a href="https://api.whatsapp.com/send?phone=558433447333&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20quartos%20no%20Holiday%20inn%20Natal."
+				target="_blank"><i class="fab fa-whatsapp"></i></a>
 		</div>
 		<div class="credits">
 			<small><b>Holiday in @ 2019.</b> Desenvolvido pela <b>EJECT</b></small>
@@ -481,26 +501,27 @@
 
 	<div id="social">
 		<div id="one">
-			<a href="#" target="_blank">
+			<a href="https://www.facebook.com/holidaynatal.lagoanova/" target="_blank">
 				<i class="fab fa-facebook-square"></i>
 			</a>
 		</div>
 		<div>
-			<a href="#" target="_blank">
+			<a href="https://www.instagram.com/explore/locations/953822571/holiday-inn-natal/" target="_blank">
 				<i class="fab fa-instagram"></i>
 			</a>
 		</div>
 		<div id="last">
-			<a href="#" target="_blank">
+			<a href="https://api.whatsapp.com/send?phone=558433447333&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20quartos%20no%20Holiday%20inn%20Natal."
+				target="_blank">
 				<i class="fab fa-whatsapp"></i>
 			</a>
 		</div>
 	</div>
-	<div id="floatbtn">
+	<!-- <div id="floatbtn">
 		<div>
 			<i class="fas fa-envelope"></i>
 		</div>
-	</div>
+	</div> -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery-migrate-3.1.0.min.js"></script>
