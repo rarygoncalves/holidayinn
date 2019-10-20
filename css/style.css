@@ -21,6 +21,11 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 /*CLASSES COMPARTILHADAS*/
 
 /*---------------------------------------------------------------------------------------*/
+
+.card{
+  border: 0px!important;
+}
+
 .drk:after{
   content: "";
   display: block;
@@ -36,11 +41,11 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 .divisoria-titulo{
   width: 16rem;
   border-top: 0.5rem solid #43A23B;
-  padding-bottom: 4% !important;
+  padding-bottom: 3% !important;
 }
 .secao-titulo{
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2.7rem!important;
 }
 .btn {
 	color: #ffffff !important;
@@ -60,6 +65,18 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   background-color: #FAFAFA!important;
 }
 
+#contato, #acomodacoes,#quemsomos{
+  width:100%;
+  padding-top: 3%;
+  padding-left: 5% ;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+#quemsomos #acomodacoes{
+  background-color:#FAFAFA;
+}
+
 
 /*---------------------------------------------------------------------------------------*/
 
@@ -67,92 +84,109 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 
 /*---------------------------------------------------------------------------------------*/
 .carousel-inner img{
-	width: 100%;
+  width: 100%;
+  height:100vh;
+  object-fit: cover;
 }
 .carousel-caption {
-	position: absolute;
-	transform: translateY(-50%);
-  top: 58%;
+  
+  margin-top: 48vh!important;
+  margin-bottom: 37vh!important;
   text-shadow: 0px 2px 8px #000000b0;
 }
-.carousel-caption h1 {
+h1.carousel-caption {
   font-size: 2.5rem;
-
 
 }
 .carousel-caption h5 {
 	font-size: 1.5rem;
 	padding-bottom: 2rem;
 }
+.slidershow{
+  background: #000;
+}
 /*---------------------------------------------------------------------------------------*/
 
 /*QUEM SOMOS*/
 
 .teste{
-  margin: 6px auto 60px;
+  
   display: grid;
 }
 
-.teste .card{
+.teste .card-quemsomos{
   position: relative;
-  width: 350px;
-  margin: 0 auto;
+  max-width: 330px;
+  min-width: 275px!important;
+  min-height:440px!important;
+  margin: 1%;
   background: #43A23B;
   padding: 25px;
   box-sizing: border-box;
   text-align: justify;
-  box-shadow: 4px 4px 4px #c4c4c4;
   color: #FFFFFF;
   border-radius: 5px;
 }
 
-.teste .card h2{
+.teste .card-quemsomos h4{
   text-align: center;
 }
 
 .quemSomosTitle{
+
   color: #092601;
-  text-shadow: 2px 2px 2px #c4c4c4;
+  /* text-shadow: 2px 2px 2px #c4c4c4; */
 }
 
 .iconQ{
   text-align: center;
 }
 
-.card .iconQ{
+.card-quemsomos{
+  box-shadow: 4px 4px 4px #c4c4c4;
+}
+.card-quemsomos .iconQ{
   font-size: 100px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   color: #AAD900;
 }
 
 .quemSomosP{
-  padding: 0px 10% 0px 10%;
+  max-width:967px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 1.5%;
 }
+
 /*---------------------------------------------------------------------------------------*/
 
 /*SEÇÃO PROMOÇÕES*/
-
 
 .promocao-card{
 
  color:#092601;
  margin:0.3%;
- margin-bottom: 8%;
  text-align: justify;
  height: 28rem !important;
  border: 0px !important;
  background-color: #FAFAFA!important;
-
+ box-shadow: 4px 4px 4px #0000002d!important;
 }
 
 #promocoes{
   padding-top: 3%;
   padding-left: 15%;
   padding-right: 15%;
-  padding-bottom: 4%;
+  padding-bottom: 3%;
   width:100%;
   background-color:#A7D384;
   color:#FFFFFF;
+}
+.carousel-promocao{
+padding: 0px!important;
+}
+#promocoes.slick-dots{
+  margin-top: 1%!important;
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -160,24 +194,19 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 /*SEÇÃO ACOMODAÇÕES*/
 
 /*---------------------------------------------------------------------------------------*/
-#acomodacoes{
 
-  background-color:#FAFAFA;
-  padding-top: 4%;
-  padding-left: 5% ;
-  padding-right: 5%;
-  padding-bottom: 4%;
-}
 .card-acomodacao{
+  border:0px !important;
   max-width: 330px!important;
   min-width: 275px!important;
-
-  margin:2%;
+  color: #FFFFFF;
+  margin:1%;
+  box-shadow: 4px 4px 4px #0000002d!important;
   padding:0%!important;
 }
 
 .card-body-acomodacao{
-  color:#FFFFFF;
+  
   /* background-color: #43A23B!important; */
   text-align: justify;
   border:0px !important;
@@ -197,7 +226,7 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   background-color: #43A23B!important;
 }
 .fa-smoking-ban.icon-acomodacoes{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color:#FFFFFF;   
 }
 
@@ -222,9 +251,13 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   color:#FFFFFF;
   background-color: #43A23B;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-out;
+
 }
 
 .card-acomodacao:hover .icon-acomodacoes{
+  transition: 0.3s ease-out;
+
   opacity: 0;
 }
 
@@ -236,11 +269,6 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
 
 #contato{
   color:#FFFFFF;
-  width: 100%;
-  padding-top: 3%;
-  padding-left: 5% ;
-  padding-right: 5%;
-  padding-bottom: 2%;
   background-size: cover!important;
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
@@ -248,25 +276,29 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   background-blend-mode: multiply;
 }
 
+#contato button{
+  width:100%!important;
+}
+
 .telefone-contato{
   border-right: 1px solid rgba(250, 250, 250, 0.562);
   border-left: 1px solid rgba(250, 250, 250, 0.562);
 }
+.texto-contato {
+  margin:0.6%!important;
+  min-width: 225px;
+}
+.form-contato,#map{
+  min-width:380px!important;
+  max-width:569px!important;
+}
 
 
-/*--------------------------------------------------------*/
-
-@media (max-width: 1200px) {
-	.carousel-caption {
-		top: 55%;
-	}
+@media (max-width: 991px) {
 	.carousel-caption h1{
 		font-size: 2.5rem;
 	}
-	.carousel-caption h5 {
-		font-size: 1.5rem;
-		padding-bottom: 2rem;
-	}
+
 	.carousel-caption .btn{
 		font-size: 1rem;
 		width: 70%;
@@ -274,65 +306,21 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   .promocao-card{
 
     margin:0.3%!important;
-  }
-  #promocoes{
-    padding-top: 5%;
-    padding-left: 10%!important;
-    padding-right: 10%!important;
-    padding-bottom: 5%;
-
-  }
-  
-  /*Acomodações*/
-  .card-body.card-body-acomodacao.h4{
-    font-size: 1.5rem !important;
-  }
-  .card-body.card-body-acomodacao.h3{
-    font-size: 1.6rem !important;
-  }
-  .telefone-contato{
-    border-right: 1px solid rgba(250, 250, 250, 0.562);
-    border-left: 1px solid rgba(250, 250, 250, 0.562);
-  }
-
-}
-
-@media (max-width: 991px) {
-	.carousel-caption {
-		top: 55%;
-	}
-	.carousel-caption h1{
-		font-size: 2.5rem;
-	}
-	.carousel-caption h5 {
-		font-size: 1.5rem;
-		padding-bottom: 2rem;
-	}
-	.carousel-caption .btn{
-		font-size: 1rem;
-		width: 70%;
-	}
-  .promocao-card{
-
-    margin:0.2%!important;
 
   }
   #promocoes{
-
-    padding-top: 5%;
-    padding-left: 14% !important;
-    padding-right: 14%!important;
-    padding-bottom: 5%;
-
+    padding-top: 4%;
+    padding-left: 11%!important;
+    padding-right: 11%!important;
+    padding-bottom: 4%;
   }
-
-  /*Acomodações*/
-  .card-body.card-body-acomodacao h4{
-    font-size: 1.4rem !important;
+  #contato, #acomodacoes,#quemsomos{
+    padding-top: 6%;
+    padding-left: 2%!important;
+    padding-right: 2%!important;
+    padding-bottom: 6%;
   }
-  .card-body.card-body-acomodacao h3{
-    font-size: 1.5rem !important;
-  }
+ 
   .fa-smoking-ban.icon-acomodacoes{
     font-size: 2rem;
   }
@@ -342,32 +330,19 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   .icon-acomodacoes-conteudo{
     margin:0.4%;
   }
-  #acomodacoes{
-    padding-top: 3%;
-    padding-left: 4%!important;
-    padding-right: 4%!important;
-    padding-bottom: 3%;
-  }
 
-  .telefone-contato{
-    border-right: 1px solid rgba(250, 250, 250, 0)!important;
-    border-left: 1px solid rgba(250, 250, 250, 0)!important;
+  h4.telefone-contato{
+    font-size:1.3rem!important;
   }
+  .form-contato,#map{
+    min-width:320px!important;
+  }
+  
 
 }
 
 @media (max-width: 767px) {
-	.carousel-caption {
-		top: 50%;
-	}
-	.carousel-caption h1, .secao-titulo {
-		font-size: 2.5rem;
-	}
-	.carousel-caption h5 {
-		font-size: 1rem;
-		padding-bottom: 1rem;
 
-	}
 	.carousel-caption .btn{
 		font-size: 1rem;
 		width: 50%;
@@ -377,15 +352,13 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     color:#092601;
     margin:1%;
     text-align: justify;
-
-
   }
   .titulo-card-promocao{
     text-align: center;
   }
   .promocao-card{
 
-    margin:1%!important;
+    margin:0.7%!important;
   }
   .secao-conteudo p{
     font-size: 0.9rem;
@@ -395,9 +368,16 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
   }
   #promocoes{
     padding-top: 4%;
-    padding-left: 12%!important;
-    padding-right: 12%!important;
+    padding-left: 15%!important;
+    padding-right: 15%!important;
     padding-bottom: 4%;
+  }
+  #contato, #acomodacoes,#quemsomos{
+    width:100%;
+    padding-top: 6%;
+    padding-left: 4%!important;
+    padding-right: 4%!important;
+    padding-bottom: 6%;
   }
 
   /*Acomodações*/
@@ -414,36 +394,43 @@ design se comportarão de maneira diferente em cada lado do ponto de interrupç�
     border-right: 1px solid rgba(250, 250, 250, 0)!important;
     border-left: 1px solid rgba(250, 250, 250, 0)!important;
   }
+
+  #social{
+    display:none!important;
+  }
 }
 
 @media (max-width: 575px) {
-	.carousel-caption {
-		top: 45%;
-	}
-	.carousel-caption h1{
-		font-size: 1.7rem;
-	}
-	.carousel-caption h5{
-		font-size: 1rem;
-		padding-bottom: 0.3rem;
-	}
+
+
 	.carousel-indicators{
 		display: none;
 	}
-	.carousel-caption .btn{
-		font-size: 0.5rem;
-		width: 50%;
-  }
+h1.secao-titulo, h1{
+  font-size: 2.4rem!important;
+}
   .promocao-card{
 
     margin:0.3%!important;
   }
+  #promocoes{
+    padding-top: 4%;
+    padding-left: 12%!important;
+    padding-right: 12%!important;
+    padding-bottom: 4%;
+  }
+  #contato, #acomodacoes,#quemsomos{
+    width:100%;
+    padding-top: 6%;
+    padding-left: 5%!important;
+    padding-right: 5%!important;
+    padding-bottom: 6%;
+  }
+
   .secao-conteudo p{
     font-size: 1rem;
   }
-  .secao-conteudo h5{
-    font-size: 1rem;
-  }
+
   .teste .card{
     position: relative;
     width: 300px;
@@ -493,11 +480,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
+  width:100%;
+  height:100vh;
 }
 /*--- Fixed Background Image --*/
 figure {
@@ -515,15 +504,12 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/purple.jpg');
   position: fixed;
   display: block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
@@ -561,6 +547,13 @@ figure {
   width: 100%;
   display: block;
 }
+#social a{
+  text-decoration: none!important;
+}
+
+#social div i:hover{
+  color: rgb(204, 201, 201);
+}
 
 #one /*Div ICON radius*/ {
   border-radius: 0px 15px 0px 0px;
@@ -581,6 +574,10 @@ figure {
  color: #F8F4F4;
 }
 
+.footerbtn i:hover{
+  color: rgb(204, 201, 201);
+}
+
 .credits{
   color: #fff;
   text-align: center;
@@ -596,8 +593,8 @@ footer{
 /* BOTÃO FLUTUANTE */
 
 #floatbtn {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   position: fixed;
   top: 86%;
   left: 30px; 
@@ -605,6 +602,7 @@ footer{
   display: block;
   font-size: 20px;
   color: #fff;
+  text-decoration: none!important;
 }
 
 #floatbtn div{
@@ -612,6 +610,12 @@ footer{
   height: 100%;
   border-radius: 50%;
   text-align: center;
-  background-color: #43A23B;
+  background-color: rgb(96, 192, 89);
   line-height: 50px;
+  box-shadow: 3px 3px 4px #0000002d!important;
+  
+}
+
+#floatbtn i:hover{
+  color: rgb(204, 201, 201);
 }
